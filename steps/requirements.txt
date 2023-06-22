@@ -1,0 +1,4 @@
+robotframework-pabot
+robotframework
+webdriver-manager
+AppiumLibrary
