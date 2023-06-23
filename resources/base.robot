@@ -19,6 +19,3 @@ Abrir o App
 Fechar o App
     Close Application
  
-# ### BDD ###
-# Dado que eu acesso   
- 

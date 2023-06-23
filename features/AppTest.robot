@@ -1,23 +1,17 @@
 *** Settings ***
 Library     AppiumLibrary
+Resource    ../steps/teste_file.robot
 Resource    ../resources/base.robot    
-
-
  
+Test setup         Abrir o App  
+#Suite Setup        Abrir o navegador
+Test Teardown      Fechar o App  
+#Suite Teardown     Fechar o navegador 
+
 *** Test Cases ***
-Deve abrir o aplicativo android e clicar no botão do google
-  base.Abrir o App
-  Clicar no botão do google
- 
-*** Keywords ***
-Clicar no botão do google
-    Wait Until Element Is Visible    ${btn_google}
-    Sleep  20
-    Click Element                    ${btn_google}
- 
- 
-# Quando clico no '${btn_google}'  
-#     AppTest_PA.ClicarBotao '${acao}' 
- 
-
-
+Caso de Teste 01 - Abrir o aplicativo google
+    [Documentation]    Abrir o App
+    [Tags]             App    regressivo     
+    Dado que inicio o aplicaivo android
+    Quando clico no botão para abrir o google 
+    #Então vejo a tela do app google
