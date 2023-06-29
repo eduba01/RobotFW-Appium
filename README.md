@@ -8,12 +8,15 @@
 ## 🛠️ Instalação e configurações
  
 ${BASE_URL}            http://localhost:4723/wd/hub
+
 ${APP}                 ${EXECDIR}/../App/TvBox.apk
 
 
 ### Appium Inspector
 Host:               http://localhost
+
 Porta:              4723
+
 Remote path:        /wd/hub
 
 ````
@@ -28,7 +31,7 @@ Remote path:        /wd/hub
 }
 ````
 
-
 ${BASE_URL}            http://localhost:4723/wd/hub
+
 ${APP}                 ${EXECDIR}/../App/TvBox.apk
  
