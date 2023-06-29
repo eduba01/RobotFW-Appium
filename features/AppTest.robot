@@ -13,5 +13,5 @@ Caso de Teste 01 - Abrir o aplicativo google
     [Documentation]    Abrir o App
     [Tags]             App    regressivo     
     Dado que inicio o aplicaivo android
-    Quando clico no botão para abrir o google 
-    #Então vejo a tela do app google
+    Quando clico no botão para abrir os widgets
+    Então vejo a tela de widgets 

@@ -11,9 +11,11 @@ Resource        ../global_variables.robot
 Dado que inicio o aplicaivo android
   base.Abrir o App
 
-Quando clico no botão para abrir o google
+Quando clico no botão para abrir os widgets
   Wait Until Element Is Visible     ${btn_google}
   Click Element                     ${btn_google}
-
-#Então vejo a tela do app google
-  #Wait Until Element Is Visible     ${}
+  Sleep   2
+Então vejo a tela de widgets
+  Wait Until Element Is Visible     ${widget} 
+  Page Should Contain Element       ${widget} 
+  Sleep   5
